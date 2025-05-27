@@ -24,9 +24,23 @@ NHƯỢC ĐIỂM:
 Hàm include dùng để thêm một file nào đó 
 vào file đang thao tác
 -->
-<?php include('view/header.php') ?>
+
+<!-- BT:
+- Tạo trang tin tức (news.php) có menu 
+- Tạo trang về chúng tôi (about.php) có menu 
+- Link 2 trang này lên menu
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <?php include('view/menu.php') ?>
+    <?php include('views/menu.php') ?>
     <h1>Trang chủ</h1>
+    <?php include('views/footer.php') ?>
 </body>
 </html>

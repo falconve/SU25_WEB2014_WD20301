@@ -21,3 +21,13 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+.chan-trang {
+  background-color: bisque;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
