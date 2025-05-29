@@ -114,7 +114,7 @@ foreach ($cacHinh as $hinhHoc) {
     $hinhHoc -> tenHinh();
 }
 
-// BT về tính kế thừa & đóng gói 
+// BT về tính kế thừa & đóng gói  <LAB 1 + 2>
 
 // Bài tập: Quản lý học sinh và học lực
 // Bạn là một giáo viên. Bạn có lớp học gồm học sinh.
