@@ -42,6 +42,22 @@ switch ($url) {
         $ContactController = new ContactController();
         $ContactController -> index();
         break;
+    case 'add-product':
+        $ProductController = new ProductController();
+        $ProductController -> addProduct();
+        break;
+    case 'post-product':
+        $ProductController = new ProductController();
+        $ProductController -> postProduct();
+        break;
+    case 'update-product':
+        $ProductController = new ProductController();
+        $ProductController -> updateProduct();
+        break;
+    case 'edit-product':
+        $ProductController = new ProductController();
+        $ProductController -> editProduct();
+        break;
     default:
         //echo 'Trang chủ';
 
