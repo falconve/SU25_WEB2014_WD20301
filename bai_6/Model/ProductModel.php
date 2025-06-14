@@ -32,6 +32,12 @@ class ProductModel extends DB {
         $query = "UPDATE san_pham SET ten_san_pham = ?, gia_tien = ?, so_luong = ? WHERE id = ?";
         return $this -> updateDataById($query, $productId, $tenSP, $giaSP, $soLuongSP);
     }
+
+    // Xoá sản phẩm 
+    public function deleteProduct($productId) {
+        $query = "DELETE FROM san_pham WHERE id = ?";
+        return $this -> deleteProductById($query, $productId);
+    }
 }
 
 ?>

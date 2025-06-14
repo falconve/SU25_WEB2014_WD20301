@@ -21,6 +21,12 @@
         <td>
             <a href="http://localhost/WEB2014/bai_6/index.php?page=update-product&productId=<?php echo $value['id']; ?>">Cập nhật</a>
         </td>
+        <td>
+            <a href="http://localhost/WEB2014/bai_6/index.php?page=detail-product&productId=<?php echo $value['id']; ?>">Chi tiết</a>
+        </td>
+        <td>
+            <a onclick="return confirm('Bạn có muốn xoá không ?')" href="http://localhost/WEB2014/bai_6/index.php?page=delete-product&productId=<?php echo $value['id']; ?>">Xoá</a>
+        </td>
     </tr>
     <?php } ?>
 </table>

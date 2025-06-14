@@ -58,6 +58,14 @@ switch ($url) {
         $ProductController = new ProductController();
         $ProductController -> editProduct();
         break;
+    case 'detail-product':
+        $ProductController = new ProductController();
+        $ProductController -> detailProduct();
+        break;
+    case 'delete-product':
+        $ProductController = new ProductController();
+        $ProductController -> deleteProduct();
+        break;
     default:
         //echo 'Trang chủ';
 

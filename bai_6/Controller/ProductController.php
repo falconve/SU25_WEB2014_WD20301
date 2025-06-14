@@ -72,5 +72,32 @@ class ProductController {
         // Điều hướng người dùng về trang danh sách sản phẩm 
         header('Location: index.php?page=product');
     }
+
+    // Chi tiết sản phẩm 
+    public function detailProduct() {
+        // Lấy thông tin chi tiết của 1 sản phẩm 
+        $productId = $_GET['productId']; // id của sản phẩm
+
+        
+        $product = new ProductModel();
+
+        // Lấy thông tin của bản ghi trong bảng san_pham theo id
+        $productById = $product -> getProductById($productId);
+        require_once('views/detail_product.php');
+    }
+
+    // Xoá sản phẩm 
+    public function deleteProduct() {
+        // Lấy thông tin chi tiết của 1 sản phẩm 
+        $productId = $_GET['productId']; // id của sản phẩm
+        
+        $product = new ProductModel();
+
+        $result = $product -> deleteProduct($productId);
+
+        // Điều hướng người dùng về trang danh sách sản phẩm 
+        header('Location: index.php?page=product');
+        
+    }
 }
 ?>

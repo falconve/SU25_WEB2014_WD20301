@@ -46,7 +46,12 @@ class DB {
 
     public function updateDataById($query, $productId, $tenSP, $giaSP, $soLuongSP) {
         $stmt = $this -> connection -> prepare($query);
-        $stmt -> execute([$tenSP, $giaSP, $soLuongSP, $productId]);
+        return $stmt -> execute([$tenSP, $giaSP, $soLuongSP, $productId]);
+    }
+
+    public function deleteProductById($query, $productId) {
+        $stmt = $this -> connection -> prepare($query);
+        return $stmt -> execute([$productId]);
     }
 
 }

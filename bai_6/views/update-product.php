@@ -1,6 +1,6 @@
 <h1>Trang cập nhật sản phẩm</h1>
 <form action="http://localhost/WEB2014/bai_6/index.php?page=edit-product" method="POST">
-    <input type="text" name="id_sp" value="<?php echo $productById['id'] ?>" />
+    <input type="hidden" name="id_sp" value="<?php echo $productById['id'] ?>" />
     <div class="ten-sp">
         <label for="">Tên sản phẩm</label>
         <input type="text" name="ten_sp" id="" value="<?php echo $productById['ten_san_pham'] ?>">
